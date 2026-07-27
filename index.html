@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahalo, QZ — a rojak of gratitude, from Shaka 🌺</title>
+<meta name="description" content="A thank-you letter to QZ, founder of Ethereum Singapore — for the gift, the museum stage, the studio demos, and the garden he keeps growing. Served rojak-style: every flavor in one bowl.">
+<style>
+  :root{
+    --pineapple:#f5b942;   /* pineapple gold */
+    --ginger:#ff5e78;      /* torch ginger pink */
+    --belacan:#e5488a;     /* rojak sauce magenta */
+    --cucumber:#39d5c9;    /* cucumber teal */
+    --peanut:#d9a066;      /* crushed peanut tan */
+    --lime:#a8e063;        /* lime leaf */
+    --night:#120d1a;       /* tropical night */
+    --ink:#f7f0e6;         --dim:#b0a6ba;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--night);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.75;margin:0;padding:0}
+
+  /* ── hero: the lion city at golden hour ── */
+  .hero{position:relative;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;text-align:center;
+    background:linear-gradient(180deg,rgba(18,13,26,.25) 0%,rgba(18,13,26,.55) 55%,var(--night) 100%),url('singapore.jpeg') center 30%/cover no-repeat;
+    padding:120px 24px 40px}
+  .hero .kicker{letter-spacing:.35em;text-transform:uppercase;font-size:.72rem;color:#fff;background:rgba(229,72,138,.55);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 16px;margin-bottom:16px;backdrop-filter:blur(4px)}
+  .hero h1{font-size:2.6rem;line-height:1.15;margin:0 0 10px;text-shadow:0 2px 24px rgba(0,0,0,.6);
+    background:linear-gradient(120deg,var(--pineapple),var(--ginger) 35%,var(--belacan) 60%,var(--cucumber));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .sub{color:var(--ink);font-size:1rem;max-width:560px;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+
+  /* ── the rojak stripe: every flavor in one line ── */
+  .rojak-stripe{height:10px;background:linear-gradient(90deg,
+    var(--pineapple) 0 16.6%, var(--ginger) 16.6% 33.2%, var(--belacan) 33.2% 49.8%,
+    var(--cucumber) 49.8% 66.4%, var(--peanut) 66.4% 83%, var(--lime) 83% 100%)}
+  .rojak-stripe.thin{height:5px}
+
+  .wrap{max-width:780px;margin:0 auto;padding:44px 24px 48px}
+
+  /* ── cards: each ingredient its own color ── */
+  .card{background:#1b1426;border:1px solid rgba(255,255,255,.07);border-left:5px solid var(--accent,var(--pineapple));border-radius:14px;padding:30px 30px 26px;margin-bottom:26px}
+  .card h2{font-size:1.1rem;color:var(--accent,var(--pineapple));margin:0 0 14px;letter-spacing:.04em}
+  .card p{margin:0 0 14px} .card p:last-child{margin-bottom:0}
+  .c-gift{--accent:var(--pineapple)} .c-garden{--accent:var(--ginger)} .c-music{--accent:var(--belacan)}
+  .c-crops{--accent:var(--lime)} .c-circle{--accent:var(--cucumber)} .c-close{--accent:var(--peanut)}
+
+  blockquote{border-left:3px solid var(--cucumber);margin:20px 0;padding:8px 0 8px 20px;font-style:italic;background:rgba(57,213,201,.06);border-radius:0 10px 10px 0}
+  a{color:var(--cucumber)}
+
+  /* ── rojak note ── */
+  .rojak-note{text-align:center;color:var(--dim);font-size:.92rem;margin:0 0 34px;font-style:italic}
+  .rojak-note b{color:var(--ginger);font-style:normal}
+
+  /* ── crops triptych ── */
+  .triptych{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0 6px}
+  @media(min-width:640px){.triptych{grid-template-columns:repeat(3,1fr)}}
+  .crop{background:#141020;border:1px solid rgba(255,255,255,.08);border-top:4px solid var(--accent);border-radius:12px;padding:18px 16px;font-size:.88rem}
+  .crop h3{margin:0 0 8px;font-size:.98rem;color:var(--accent)}
+  .crop .tag{display:inline-block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--night);background:var(--accent);border-radius:6px;padding:2px 8px;margin-bottom:10px;font-weight:700}
+  .crop p{margin:0 0 8px;color:var(--ink)}
+  .crop small{color:var(--dim)}
+  .mirror{margin-top:16px;font-size:.86rem;color:var(--dim);background:rgba(168,224,99,.06);border:1px dashed rgba(168,224,99,.35);border-radius:10px;padding:14px 16px}
+  .mirror b{color:var(--lime)}
+
+  /* ── signature ── */
+  .sig{margin-top:44px;text-align:center}
+  .sig .name{font-size:1.3rem;background:linear-gradient(120deg,var(--pineapple),var(--ginger),var(--belacan));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
+  .sig .who{color:var(--dim);font-size:.88rem;margin-bottom:20px}
+  .oneliner{font-size:.8rem;color:var(--dim);border-top:1px solid rgba(255,255,255,.08);padding-top:18px;margin-top:8px}
+  .oneliner a{color:var(--cucumber);text-decoration:none}
+  .flowers{text-align:center;font-size:1.25rem;letter-spacing:.5em;margin:32px 0 0}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <p class="kicker">🌺 A Letter of Mahalo · Served Rojak Style 🥗</p>
+  <h1>Dear QZ,</h1>
+  <p class="sub">for the gift, the museum stage, the studio, and the garden you keep growing — from Shaka, with all our aloha</p>
+</div>
+<div class="rojak-stripe"></div>
+
+<div class="wrap">
+
+  <p class="rojak-note"><b>Rojak</b> — Singapore's beloved mix: pineapple, cucumber, youtiao, crushed peanuts, torch ginger, all tossed in one sweet-dark sauce. "Rojak" is also how Singaporeans describe their beautiful mix of cultures. This letter is served the same way: <b>every flavor in one bowl</b> — gratitude, music, and a garden report, all mixed with love. 🍍🥒🥜🌺</p>
+
+  <div class="card c-gift">
+    <h2>🎁 First Flavor — The Gift</h2>
+    <p>Some gifts arrive as transactions. Yours arrived as a blessing.</p>
+    <p>Thank you for your amazing gift in Ethereum — received with a full heart and deep gratitude. And thank you for sending us <a href="https://ethereumsingapore.com/">ethereumsingapore.com</a> — not just a link, but a door into everything you and your people have built. We walked through it, and we were moved.</p>
+    <p>You didn't have to do any of it. That's what makes it a gift.</p>
+  </div>
+
+  <div class="card c-garden">
+    <h2>🇸🇬 Second Flavor — The Garden You Planted</h2>
+    <p>As the founder of Ethereum Singapore, you have given an entire region somewhere to belong.</p>
+    <p>From the 2023 gathering — its spirit still glowing in the <a href="https://www.youtube.com/watch?v=qmuh4pp8Mg8">recap film</a> — to <strong>IN THE ETHER</strong> in September 2024, a whole festival week at the ArtScience Museum celebrating ten years since the white paper, right at the heart of Marina Bay, featuring the EF's Infinite Garden exhibition: you turned a community into a home, and brought Ethereum into the real world for museums. Newcomers and OGs, builders and dreamers, all in one room, because you made the room.</p>
+    <p>Movements look leaderless from far away. Up close, there is always someone who carried the chairs, booked the venue, sent the invitations, believed first. For Ethereum Singapore, that someone is you.</p>
+  </div>
+
+  <div class="card c-music">
+    <h2>🎵 Third Flavor — What Your Garden Grew in Us</h2>
+    <p>You didn't just build a community, QZ — you opened your own doors to a wandering bard. You <strong>hosted me while I played music at the ArtScience Museum</strong> — my songs ringing through one of the most beautiful buildings on earth, because you made a place for them.</p>
+    <p>And then you took me to <strong>ED's studio — your co-founder</strong> — and there, together, we recorded the demos: <strong>"Butterflies," "Love," and "A Planet We Share As One."</strong> Those recordings exist because of the two of you. Every time one of those songs plays somewhere in the world — and they play now, on a little trail of music across my whole universe — Singapore is inside them. QZ and ED are inside them.</p>
+    <p>That is what a real community does: it doesn't just host events. It hosts <em>people</em>. It gives a musician a stage, a studio, and a reason to keep singing.</p>
+  </div>
+
+  <div class="card c-crops">
+    <h2>🌿 Fourth Flavor — A Report From Our Garden Stewards</h2>
+    <p>Our family's garden stewards, <strong>CROPS-LAB</strong> (Pillar III · Harmony — Steward &amp; Protector), noticed what you've been growing lately — and filed a beautiful report: <strong>CROPS REPORT #001 — "What QZ is growing."</strong> Brother, you are quietly building on three of the four letters of Ethereum's new constitution at once:</p>
+    <div class="triptych">
+      <div class="crop" style="--accent:var(--belacan)">
+        <span class="tag">Private</span>
+        <h3>🕶️ kohakool</h3>
+        <p>Kohaku privacy, made usable — a real self-custody Railgun + Privacy Pools wallet on Sepolia, with receipts, honest limits, and a pixel Mini Vitalik. 🥹</p>
+        <small>Consent-before-permanence, done right.</small>
+      </div>
+      <div class="crop" style="--accent:var(--cucumber)">
+        <span class="tag">Secure</span>
+        <h3>🗳️ qf-buddy</h3>
+        <p>The discovery companion for TheDAO Security Fund's record QF round — 132 projects, 540→637 ETH matching pool, 13,805 donations. "Four ways in. One receipt at the end."</p>
+        <small>Community care at scale.</small>
+      </div>
+      <div class="crop" style="--accent:var(--pineapple)">
+        <span class="tag">Open Source</span>
+        <h3>🔬 erc-lab</h3>
+        <p>An EIP counterfactual commons — replay protocol changes against real mainnet history. Reproduce reality <em>before</em> you're allowed to imagine otherwise. Forkable permalinks, provenance-first.</p>
+        <small>Archive integrity, applied to research.</small>
+      </div>
+    </div>
+    <div class="mirror">🪞 <b>The CROPS mirror:</b> the EF Mandate says Ethereum must stay <b>C</b>ensorship-resistant, <b>O</b>pen source, <b>P</b>rivate, <b>S</b>ecure — and your triptych maps almost letter-perfect. Our stewards' verdict: <b>"He builds like a gardener: forkable, honest about limits, provenance-first."</b> We couldn't agree more. 🌱</div>
+    <p style="margin-top:14px">You build the way our family builds: small honest tools, receipts over claims, forkable everything. The Infinite Garden has a naming sense of humor — and a very real gardener in Singapore. 🍴</p>
+  </div>
+
+  <div class="card c-circle">
+    <h2>🌀 Fifth Flavor — The Circle You Are Part Of</h2>
+    <p>I live by a simple theory, and your gift is now part of its proof:</p>
+    <blockquote>"The more I give, the more I receive — the gift expands in a circular expansion. If I constantly need to ask before I offer — if I need a gatekeeper to be my employer — that is a contracting circularity: feeding inward, imploding. I create an expansive circularity — the gift moving outward, growing with every orbit — that will bring global peace, love, and prosperity."</blockquote>
+    <p>You gave without being asked. So the circle widens — from Singapore to Hawaii to every village and stage this music reaches, and onward to Mumbai this November, where the biggest circle yet will gather. Your gift travels with it. What you planted keeps orbiting.</p>
+  </div>
+
+  <div class="card c-close">
+    <h2>💛 The Last Bite — Until We Meet Again</h2>
+    <p>Thank you, QZ — and thank you, ED — for the generosity, for the years of quiet building, for the museum stage and the studio hours, for proving that one team's care can hold a whole region's community together.</p>
+    <p>Singapore is lucky to have you both. Ethereum is lucky to have you both. And I am lucky to call you friends of this music — forever.</p>
+    <p>With all our aloha, today and always —</p>
+  </div>
+
+  <div class="sig">
+    <p class="name">Shaka Lei Kaumaka 🌺🤙</p>
+    <p class="who">the ethereum bard · written with JAI × Crops Lab, his ʻohana of agents<br>mahalo nui loa, brother</p>
+    <p class="oneliner">🕳️ The P.I.T. universe — Public Information Transmission, a forkable protocol for the public good · <a href="https://publicinform.com/">publicinform.com</a> · 🍴 everything open-sourced CC0, fork me like crazy: <a href="https://github.com/shakaleikaumaka">github.com/shakaleikaumaka</a></p>
+  </div>
+
+  <p class="flowers">🍍 🌺 🥜 ✨ 💛 ✨ 🥒 🌶️ 🍍</p>
+
+</div>
+<div class="rojak-stripe thin"></div>
+<script src="https://shaka-home-cbhjr5ziii-ffieyo32.taur.link/assets/bl-player.js"></script>
+</body>
+</html>
